@@ -7,16 +7,12 @@
 
 <script>
 import GenreList from "@/components/GenreList.vue";
-import store from "@/store";
 
 export default {
   name: "App",
   components: {
     GenreList
   },
-  mounted() {
-    store.dispatch("genre/fetchGenres");
-  }
 };
 </script>
 
